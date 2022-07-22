@@ -1,0 +1,101 @@
+//Membuat persegi
+#include <iostream>
+using namespace std;
+int main(){
+	int s;
+	cout << "Input Besar Persegi = "; cin >> s;
+	for(int i=1; i<=s ; i++){
+		for(int j=1; j<=s; j++){
+			cout << " *";
+		}
+		cout << endl;
+	}
+}
+
+
+//Memubuat segitiga
+#include <iostream>
+using namespace std;
+int main(){
+	int s;
+	cout << "Input Tiggi Segitiga = "; cin >> s;
+	for(int i=1; i<=s; i++){
+		for(int j=i; j>=1; j--){
+			cout << " *";
+		}
+		cout << endl;
+	}
+}
+
+
+//Membuat Segitiga Terbalik
+#include <iostream>
+using namespace std;
+int main(){
+	int s=4;
+	for(int i=1; i<=s; i++){
+		for(int j=s; j>=i; j--){
+			cout << " *";
+		}
+		cout << endl;
+	}
+}
+
+
+//Membuat Segitiga2
+#include <iostream>
+using namespace std;
+int main(){
+	int s=3;
+	for(int i=0; i<=s; i++){
+		for(int j=1; j<= s-i; j++){
+			cout << " *";
+		}
+		cout << endl;
+	}
+}
+
+
+//Membuat segitiga Angka
+#include <iostream>
+using namespace std;
+int main(){
+	int s=5;
+	for (int i=1; i<=s; i++){
+		for(int j=1; j<=i; j++){
+			cout << i << " ";
+		}
+		cout << endl;
+	}
+}
+
+
+//Membuat Segitiga2
+#include <iostream>
+using namespace std;
+int main(){
+	int s=4;
+	for(int i=1; i<=s; i++){
+		for(int j=1; j<=i; j++){
+			cout << j << " ";
+		}
+		cout << endl;
+	}
+}
+
+
+//Membuat Segitiga angka3
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main(){
+	int s=7;
+	int m;
+	for(int i=1; i<=s; i++){
+		for (int j=1; j<=i; j++){
+			m++;
+			cout << setw(3)<< m ; 
+		}
+		cout << endl;
+	}
+}
