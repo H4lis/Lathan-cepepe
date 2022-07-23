@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int n=4;
+	int fn;
+	int fn_1 =1;
+	int fn_2 =0;
+	int i=1;
+	cout << fn_1 + fn_2;
+	do{		
+		fn   = fn_1 + fn_2;
+		fn_2 = fn_1;
+		fn_1 = fn;
+		cout << " " << fn ;
+		i++;	
+	}
+	while (i<n);
+}
