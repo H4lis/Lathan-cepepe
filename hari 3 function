@@ -1,0 +1,65 @@
+//Lempar Dadu
+#include <iostream>
+#include <cstdlib> //fungsi Random
+using namespace std;
+
+int main() {
+	char lanjut;
+	while(true){
+		cout << "Lempar dadu (y/n) " << endl;
+		cin >> lanjut;
+		if (lanjut == 'y') {
+			cout << 1+ (rand() % 6) << endl;
+		}
+		else if (lanjut == 'n') {
+			return 0;
+		}
+		else {
+			cout << "Inputan salah kodonge";
+		}
+	}
+}
+
+
+//Kuadrat 
+#include <iostream>
+using namespace std;
+
+int kuadrat(int k) {
+	int y = k * k;
+	return y;
+}
+
+int main() {
+	int input;
+	cout << "Mencari nilai kuadrat dari = "; cin >> input;
+	cout << kuadrat(input);
+}
+
+
+
+//Luad Dan keliling Persegi
+#include <iostream>
+using namespace std;
+
+int luas(int g, int r) {
+	return g * r;
+}
+int keliling(int m, int b) {
+	int i = (m * 2) + (b * 2);
+	return i;
+}
+void tampilkan(int c, int o) {
+	cout << "============================\n";
+	cout << "Luasnya          = " << luas(c, o) << endl;
+	cout << "Keliling persegi = " << keliling(c, o) << endl;
+	cout << "============================\n\n";
+}
+int main() {
+	int l, p;
+	cout << "============================\n";
+	cout << "Mencari luas Persegi panjang \n";
+	cout << "Input Panjang = "; cin >> p;
+	cout << "Input Lebar   = "; cin >> l;
+	tampilkan(l, p);
+}
