@@ -1,0 +1,74 @@
+#include <iostream>
+using namespace std;
+//fungsi prototipe
+//default argumen atau nilai standarnya
+double volume(double a=1, double b=1, double c=1);
+int main() {
+	cout << "Volume kubus = " << volume(1, 2, 3) << endl;
+	cout << "Volume Kubus = " << volume(1, 2) << endl;
+	cout << "Volume Kubus = " << volume(1) << endl;
+}
+double volume(double a, double b, double c) {
+	return a * b * c;
+}
+
+
+
+#include <iostream>
+using namespace std;
+//Prototipe
+double luas(double p, double l);
+double luas(double p);
+int main() {
+	double p,l;
+	cout << "Luasnya = " << luas(2) << endl;
+	cout << "Luasnya = " << luas(2, 3);
+}
+//basik function
+double luas(double p, double l) {
+	return p * l;
+}
+//overload function
+double luas(double p) {
+	return p * p;
+}
+
+
+
+#include <iostream>
+using namespace std;
+double hasil(double angka, double pangkat) {
+	double h = angka;
+	for(double i=1; i<pangkat; i++){
+		h = h * angka;
+	}
+	return h;
+}
+int main() {
+	double a, p;
+	cout << "Input Angka   = "; cin >> a;
+	cout << "Input Pangkat = "; cin >> p;
+	cout << "Hasil = " << hasil(a,p);
+}
+
+
+
+//Rekursif
+#include <iostream>
+using namespace std;
+double hasil(double angka, double pangkat) {
+	if(pangkat <=1 ){
+		return 0;
+	}else {
+		return angka * hasil(angka, pangkat - 1)
+	}
+}
+int main() {
+	double a, p;
+	cout << "Input Angka   = "; cin >> a;
+	cout << "Input Pangkat = "; cin >> p;
+	cout << "Hasil = " << hasil(a, p);
+}
+
+
+
