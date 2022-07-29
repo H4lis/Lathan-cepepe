@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a = 5;
+	
+	// Pointer
+	int* aptr = nullptr;
+	aptr = &a;
+
+	// int a mempunyai nilai dan addres (alamat)
+
+	cout << "Nilai dari  a: " << a << endl;
+	cout << "Alamat dari a: " << aptr << endl;
+
+	//deferencing, Mengambil data dari sebuah pointer
+	
+	cout << "Mengambil nilai dari pointer aptr : " << *aptr << endl;
+	cout << "Alamat dari a: " << aptr << endl;
+}
