@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+void fungsi(int& b) {
+	 b = 10;
+	cout << "Addres b " << &b << endl;
+	cout << "Nilai  b " << b  << endl << endl;
+}
+void kuadrat(int& nilaiRef) {
+	nilaiRef = nilaiRef * nilaiRef;
+}
+
+int main() {
+	int a = 5;
+	cout << "Addres a " << &a << endl;
+	cout << "Nilai  a " << a  << endl << endl;
+	// fungsi(a);
+	kuadrat(a);
+
+	cout << "Nilai a = " << a;
+}
