@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void fungsi(int* );
+void kuadrat(int* );
+
+int main() {
+	int a = 5;
+	cout << "Address dari A = " << &a << endl;
+	cout << "Nilali dari  A = " << a  << endl<< endl;
+
+	fungsi(&a); //Fungsi dengan input pointer
+	kuadrat(&a);
+
+	cout << "Nilai dari A = " << a;
+}
+
+void fungsi(int* b) {
+	cout << "Addres dari B = " << b << endl;
+	cout << "Nilai dari  B = " << *b << endl; // dereferencing
+}
+void kuadrat(int* k) {
+	*k = (*k) * (*k);
+}
