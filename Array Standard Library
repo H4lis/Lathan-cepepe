@@ -1,0 +1,24 @@
+#include <iostream>
+#include <array>
+using namespace std;
+
+int main() {
+	// Menggunakan Arrat dengan menggunakan standard library
+	// array < int, jumalh array > nama aray
+
+	array < int, 5 > nilai;
+
+	for (int i = 0; i < 5; i++) {
+		nilai[i] = (i + 1);
+		cout << "Nilai [" << i << "] = "  << nilai[i] << " Address : " << &nilai[i] << endl;
+	}
+	//ukuran array
+	cout << "Ukuran        = " << nilai.size() << endl;
+	//Addres awal dai array
+	//cout << "Addres Awal   = " << nilai.begin << endl;
+	//addres akhir dari array
+  //cout << "Addres akhir  = " << nilai.end() << endl;
+	//nilai dengan index
+	cout << "Addres akhir  = " << nilai.at(4) << endl;
+	
+}
