@@ -1,0 +1,31 @@
+#include <iostream>
+#include <array>
+#include <algorithm>
+using namespace std;
+
+const size_t  arraysize = 10;
+void printarray(array <int, arraysize> & angka) {
+	for (int &a : angka){
+		cout << a << " ";
+	}
+	cout << endl;
+}
+void printarray(array <char, arraysize>& angka) {
+	for (char& a : angka) {
+		cout << a << " ";
+	}
+	cout << endl;
+}
+
+
+int main() {
+
+	array <int, arraysize> angka = { 1,2,3,4,5,6,8,9,10,7 };
+	array <char, arraysize> huruf = { 'c','e','d','r','e','h','e','r','v','g'};
+
+	sort(angka.begin(), angka.end());
+	sort(huruf.begin(), huruf.end());
+	printarray(angka);
+	printarray(huruf);
+
+}
