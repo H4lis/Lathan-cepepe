@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	string kata("cat");
+	cout << kata << endl;
+
+	// merubah karakter pada index
+	kata[1] = 'e';
+	cout << kata << endl;
+
+	//menyambung concenation
+	string kata2(kata + "er");
+	cout << kata2 << endl;
+
+	string kata3(" membahana");
+	kata2.append(kata3);
+	cout << kata2;
+
+	string kata4("ahay???");
+	kata2 += " " +  kata4;
+	cout << kata2;
+}
