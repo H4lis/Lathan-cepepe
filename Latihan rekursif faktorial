@@ -1,0 +1,39 @@
+Latihan rekursif faktorial
+#include <iostream>
+using namespace std;
+
+int faktorial(int n) {
+	if (n == 1) {
+		return n;
+	}
+	else {
+		return n * faktorial(n - 1);
+	}
+}
+int main() {
+	int n;
+	cout << "Input N = "; cin >> n;
+	cout << "Hasil = " << faktorial(n);
+}
+
+#include <iostream>
+using namespace std;
+int fibonacci(int f) {
+	cout << f << endl;
+	if (f == 0 || f == 1) {
+		return f;
+	}
+	else {
+		
+		return fibonacci(f - 1) + fibonacci(f - 2);
+		
+	}
+}
+int main() {
+	int f;
+	cout << "fibonacci = "; cin >> f;
+	cout << fibonacci(f);
+
+}
+
+//Latihan Rekursif Fibonacci 
