@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	string input;
+	string nama = "ucup ji";
+
+	while (true) {
+		cout << "Tebak nama = "; cin >> input;
+
+		if (input == nama) {
+			cout << "di temukan " << endl;
+			break;
+		}
+		cout << "nama tidak di temukan" << endl;
+	}
+	cout << "Program selesai ";
+}
