@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	string kalimat_1 ("mhalo halis ganteng apa kabar");
+	string kalimat_2 ("Apaji kindang  ");
+
+	cout << kalimat_1 << endl;
+	cout << kalimat_2 << endl << endl << endl;
+
+	//substring, mengambil string di tengah tengah 
+	//substr(Index, Panjang)
+	cout << kalimat_1.substr(3, 4) << endl;
+	cout << kalimat_2.substr(2, 5) << endl << endl;
+
+	//Mencari Posisi dari substring
+	cout << kalimat_1.find("hal") << endl;
+	cout << kalimat_2.find("kin") << endl << endl;
+
+	//Mencari posisi dari substring yang double
+	int h = kalimat_1.find("hal");
+	cout << h << endl;
+	cout << kalimat_1.find("hal", h + 1);
+
+}
