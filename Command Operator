@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+void println(int val){
+	cout << val << endl;
+}
+
+int main(){
+	int a, b, c;
+	
+	a = (b = 6, cout << "b"  ,println(b), c = 4, cout << "c" , println(c), b+c);
+	println(a);
+}
