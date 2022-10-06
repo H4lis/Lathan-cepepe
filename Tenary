@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+// Tenary OPerator = ?
+// kondisi ? hasil1 : hasil2
+
+int main(){
+	int a, b;
+	string output, hasil1, hasil2 ;
+	hasil1 = "Keluar";
+	hasil2 = "Masuk";
+	
+	a = 5;
+	
+	cout << "Program Keluar atau masuk" << endl;
+	cout << "Input angka = " ; cin >> b ;
+	
+	output=(b > a) ? hasil1 : hasil2;
+	cout << output;
+}
